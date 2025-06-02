@@ -150,3 +150,6 @@ function toggleContact() {
           alert("❌ Failed to send message.\n" + JSON.stringify(error));
         });
     });
+
+
+

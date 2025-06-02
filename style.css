@@ -1,0 +1,58 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body { font-family: 'Inter', sans-serif; }
+        .gradient-border {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card {
+            background: linear-gradient(135deg, rgba(26, 35, 126, 0.1) 0%, rgba(29, 78, 216, 0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            transition: all 0.2s ease;
+        }
+        .skill-tag:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(147, 51, 234, 0.2) 100%);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+        .section-title {
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 2px;
+        }
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        .contact-item {
+            transition: all 0.2s ease;
+        }
+        .contact-item:hover {
+            color: #3b82f6;
+            transform: scale(1.05);
+        }
